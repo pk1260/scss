@@ -1,0 +1,209 @@
+/* Logo color blue-dark 1 = 0073cf; */
+/* Logo color blue-light 2 = 88c0e4; */
+@import 'vars';
+@import 'header';
+@import 'footer';
+@import 'grid';
+
+@mixin body {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'nav nav nav nav nav nav'
+    'img img img img img nav'
+    'fff fff fff fff fff fff'
+    'bl bl bl bl bl bl'
+    'fff1 fff1 fff1 fff1 fff1 fff1'
+    'bl1 bl1 bl1 bl1 bl1 bl1';
+    font-family:'Quicksand', sans-serif;;
+}
+
+body {
+  @include body;
+}
+// NAV //
+nav {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  color: $mainblue;
+}
+
+.header-img {
+  height: 300px;
+  background-image: url(./img/slide-iddink1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: img;
+}
+
+.header-img .content-left {
+  width: 1130px;
+  margin: 0 auto;
+  padding-top: 4em;
+  padding-left: 8em;
+  color: $mainwhite;
+}
+
+.btn {
+  width: 100px;
+  margin-top: 2em;
+  margin-left: 29em;
+  padding: 1em;
+  border-radius: 1em;
+  border-style: 2px solid;
+  border-color: $mainwhite;
+  background-color: $mainblue;
+  color: $mainwhite;
+}
+
+.btn:hover {
+  border-color: $mainblue;
+  background-color: $mainwhite;
+  color: #000;
+}
+
+.blauw {
+  background-color: $sideblue;
+  height: 400px;
+  grid-area: bl;
+  grid-template-columns: repeat(11, 1fr);
+  display: grid;
+}
+
+.blauw-text img {
+  position: absolute;
+  margin-top: -12.7em;
+  margin-left: 2em;
+}
+
+.blauw-text {
+  margin-top: 5.5em;
+  grid-column: 3/7;
+  padding: .2em;
+}
+
+.blauw-text h3 {
+  color: $mainwhite;
+}
+
+.blauw-text p {
+  color: $mainwhite;
+  font-size: .8em;
+}
+
+.blauw-img {
+  margin-top: 1.6em;
+  padding: 1em;
+  grid-column: 7/11;
+}
+
+.blauw .button2 {
+  width: 28em;
+  border: 2px solid;
+  border-color: $mainwhite;
+  border-radius: .3em;
+  padding: 1em;
+  background-color: $mainblue;
+  color: $mainwhite;
+}
+
+.blauw .button2:hover {
+  background-color: $mainwhite;
+  border-color: $mainblue;
+  color: #000;
+}
+
+.wit {
+  height: 788px;
+  grid-area: fff;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+}
+
+.center-wit {
+  text-align: center;
+}
+
+.center-wit img {
+  position: absolute;
+  margin-left: 28em;
+  margin-top: -5em;
+}
+
+.center-wit h2 {
+  margin-top: 3em;
+  color: $mainblue;
+}
+
+.center-wit .button3 {
+  width: 80px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding: 1em;
+  border-radius: .8em;
+  border-style: 2px solid;
+  border-color: $mainwhite;
+  background-color: $mainblue;
+  color: $mainwhite;
+}
+
+.center-wit .button3:hover {
+  border-color: $mainblue;
+  background-color: $mainwhite;
+  color: #000;
+}
+
+.center {
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.center h2 {
+  margin-top: 1em;
+  color: $mainblue;
+}
+
+.center img {
+  position: absolute;
+  z-index: -1;
+  margin-top: -87px;
+}
+
+.center .button {
+  width: 302px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding: 1em;
+  border-radius: .2em;
+  border-style: 2px solid;
+  border-color: $mainwhite;
+  background-color: $mainblue;
+  color: $mainwhite;
+}
+
+.center .button:hover {
+  border-color: $mainblue;
+  background-color: $mainwhite;
+  color: #000;
+}
+
+.center a {
+  width: 30px;
+}
+.wit2 {
+  height: 233px;
+  grid-area: fff1;
+}
+
+.blauw2 {
+  height: 197px;
+  background-color: $mainblue;
+  grid-area: bl1;
+}

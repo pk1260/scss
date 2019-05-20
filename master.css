@@ -1,0 +1,728 @@
+/* Logo color blue-dark 1 = 0073cf; */
+/* Logo color blue-light 2 = 88c0e4; */
+body {
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'nav nav nav nav nav nav'
+    'img img img img img nav'
+    'fff fff fff fff fff fff'
+    'bl bl bl bl bl bl'
+    'fff1 fff1 fff1 fff1 fff1 fff1'
+    'bl1 bl1 bl1 bl1 bl1 bl1';
+    font-family:'Quicksand', sans-serif;;
+}
+
+nav {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+.rightnav ul {
+  float: right;
+  padding: .1em;
+}
+
+.rightnav ul li {
+  float: right;
+  list-style: none;
+  position: relative;
+}
+
+.rightnav ul li a {
+  display: block;
+  padding: .2em .1em;
+}
+
+.footer {
+  width: 1130px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+
+.footer img {
+  margin-top: 2.5em;
+  height: 40px;
+  position: absolute;
+}
+
+.left-foot {
+  float: left;
+}
+
+.right-foot {
+  float: right;
+}
+
+.left-foot {
+  padding-top: 7em;
+}
+
+.right-foot {
+  padding-top: 1.5em;
+}
+
+.right-foot .down {
+  padding-top: 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  color: #0073cf;
+}
+
+.header-img {
+  height: 300px;
+  background-image: url(./img/slide-iddink1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: img;
+}
+
+.header-img .content-left {
+  width: 1130px;
+  margin: 0 auto;
+  padding-top: 4em;
+  padding-left: 8em;
+  color: white;
+}
+
+.btn {
+  width: 100px;
+  margin-top: 2em;
+  margin-left: 29em;
+  padding: 1em;
+  border-radius: 1em;
+  border-style: 2px solid;
+  border-color: white;
+  background-color: #0073cf;
+  color: white;
+}
+
+.btn:hover {
+  border-color: #0073cf;
+  background-color: white;
+  color: #000;
+}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  grid-area: nav;
+}
+
+/* Style the links inside the navigation bar */
+.topnav img {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  height: 40px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #0073cf;
+  margin-right: 2em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 16px
+}
+
+.blauw {
+  background-color: #88c0e4;
+  height: 400px;
+  grid-area: bl;
+  grid-template-columns: repeat(11, 1fr);
+  display: grid;
+}
+
+.blauw-text img {
+  position: absolute;
+  margin-top: -12.7em;
+  margin-left: 2em;
+}
+
+.blauw-text {
+  margin-top: 5.5em;
+  grid-column: 3/7;
+  padding: .2em;
+}
+
+.blauw-text h3 {
+  color: #fff;
+}
+
+.blauw-text p {
+  color: #fff;
+  font-size: .8em;
+}
+
+.blauw-img {
+  margin-top: 1.6em;
+  padding: 1em;
+  grid-column: 7/11;
+}
+
+.blauw .button2 {
+  width: 28em;
+  border: 2px solid;
+  border-color: #fff;
+  border-radius: .3em;
+  padding: 1em;
+  background-color: #0073cf;
+  color: #fff;
+}
+
+.blauw .button2:hover {
+  background-color: #fff;
+  border-color: #0073cf;
+  color: #000;
+}
+
+.wit {
+  height: 788px;
+  grid-area: fff;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+}
+
+.center-wit {
+  text-align: center;
+}
+
+.center-wit img {
+  position: absolute;
+  margin-left: 28em;
+  margin-top: -5em;
+}
+
+.center-wit h2 {
+  margin-top: 3em;
+  color: #0073cf;
+}
+
+.center-wit .button3 {
+  width: 80px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding: 1em;
+  border-radius: .8em;
+  border-style: 2px solid;
+  border-color: white;
+  background-color: #0073cf;
+  color: white;
+}
+
+.center-wit .button3:hover {
+  border-color: #0073cf;
+  background-color: #fff;
+  color: #000;
+}
+
+.tile1 {
+  grid-column: 2/3;
+  padding: 1em;
+}
+
+.tile2 {
+  grid-column: 3/4;
+  padding: 1em;
+}
+
+.tile3 {
+  grid-column: 4/5;
+  padding: 1em;
+}
+
+.tile4 {
+  grid-column: 5/6;
+  padding: 1em;
+}
+
+.text1 {
+  margin-top: -50px;
+  grid-column: 2/3;
+  padding: 1em;
+}
+
+.text2 {
+  margin-top: -50px;
+  grid-column: 3/4;
+  padding: 1em;
+}
+
+.text3 {
+  margin-top: -50px;
+  grid-column: 4/5;
+  padding: 1em;
+}
+
+.text4 {
+  margin-top: -50px;
+  grid-column: 5/6;
+  padding: 1em;
+}
+
+.center {
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.center h2 {
+  margin-top: 1em;
+  color: #0073cf;
+}
+
+.center img {
+  position: absolute;
+  z-index: -1;
+  margin-top: -87px;
+}
+
+.center .button {
+  width: 302px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding: 1em;
+  border-radius: .2em;
+  border-style: 2px solid;
+  border-color: white;
+  background-color: #0073cf;
+  color: white;
+}
+
+.center .button:hover {
+  border-color: #0073cf;
+  background-color: #fff;
+  color: #000;
+}
+
+.center a {
+  width: 30px;
+}
+.wit2 {
+  height: 233px;
+  grid-area: fff1;
+}
+
+.blauw2 {
+  height: 197px;
+  background-color: #0073cf;
+  grid-area: bl1;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      'nav nav nav nav'
+      'img img img img'
+      'fff fff fff fff'
+      'bl bl bl bl'
+      'fff1 fff1 fff1 fff1'
+      'bl1 bl1 bl1 bl1';
+      font-family:'Quicksand', sans-serif;;
+  }
+
+  nav {
+    width: 1130px;
+    margin: 0 auto;
+    grid-area: nav;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    color: #0073cf;
+  }
+
+  .header-img {
+    height: 300px;
+    background-image: url(../img/slide-iddink1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: img;
+  }
+
+  .header-img .content-left {
+    width: 1130px;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-left: 8em;
+    color: white;
+  }
+
+  .btn {
+    width: 100px;
+    margin-top: 2em;
+    margin-left: 29em;
+    padding: 1em;
+    border-radius: 1em;
+    border-style: 2px solid;
+    border-color: white;
+    background-color: #0073cf;
+    color: white;
+  }
+
+  .topnav {
+    background-color: white;
+    overflow: hidden;
+    grid-area: nav;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav img {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    height: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    color: #0073cf;
+    margin-right: 2em;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 16px
+  }
+
+  .blauw {
+    background-color: #88c0e4;
+    height: 400px;
+    grid-area: bl;
+  }
+
+  .wit {
+    height: 788px;
+    grid-area: fff;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+
+  .tile1 {
+    grid-column: 2/3;
+    padding: .2em;
+  }
+
+  .tile2 {
+    grid-column: 3/4;
+    padding: .2em;
+  }
+
+  .tile3 {
+    grid-column: 4/5;
+    padding: .2em;
+  }
+
+  .tile4 {
+    grid-column: 5/6;
+    padding: .2em;
+  }
+
+  .text1 {
+    margin-top: -50px;
+    grid-column: 2/3;
+    padding: .2em;
+  }
+
+  .text2 {
+    margin-top: -50px;
+    grid-column: 3/4;
+    padding: .2em;
+  }
+
+  .text3 {
+    margin-top: -50px;
+    grid-column: 4/5;
+    padding: .2em;
+  }
+
+  .text4 {
+    margin-top: -50px;
+    grid-column: 5/6;
+    padding: .2em;
+  }
+
+  .center {
+    text-align: center;
+    grid-column: 1/-1;
+  }
+
+  .center img {
+    position: absolute;
+    z-index: -1;
+    margin-top: -87px;
+  }
+
+  .center .button {
+    width: 302px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    padding: 1em;
+    border-radius: 1em;
+    border-style: 2px solid;
+    border-color: white;
+    background-color: #0073cf;
+    color: white;
+  }
+
+  .center a {
+    width: 30px;
+  }
+  .wit2 {
+    height: 233px;
+    grid-area: fff1;
+  }
+
+  .blauw2 {
+    height: 197px;
+    background-color: #0073cf;
+    grid-area: bl1;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      'nav nav nav nav nav nav'
+      'img img img img img nav'
+      'fff fff fff fff fff fff'
+      'bl bl bl bl bl bl'
+      'fff1 fff1 fff1 fff1 fff1 fff1'
+      'bl1 bl1 bl1 bl1 bl1 bl1';
+      font-family:'Quicksand', sans-serif;;
+  }
+
+  nav {
+    width: 1130px;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    color: #0073cf;
+  }
+
+  .header-img {
+    height: 300px;
+    background-image: url(../img/slide-iddink1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: img;
+  }
+
+  .header-img .content-left {
+    width: 1130px;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-left: 8em;
+    color: white;
+  }
+
+  .btn {
+    width: 100px;
+    margin-top: 2em;
+    margin-left: 29em;
+    padding: 1em;
+    border-radius: 1em;
+    border-style: 2px solid;
+    border-color: white;
+    background-color: #0073cf;
+    color: white;
+  }
+
+  .topnav {
+    background-color: white;
+    overflow: hidden;
+    grid-area: nav;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav img {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    height: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    color: #0073cf;
+    margin-right: 2em;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 16px
+  }
+
+  .blauw {
+    background-color: #88c0e4;
+    height: 400px;
+    grid-area: bl;
+  }
+
+  .wit {
+    height: 788px;
+    grid-area: fff;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+  }
+
+  .tile1 {
+    grid-column: 2/3;
+    padding: .2em;
+  }
+
+  .tile2 {
+    grid-column: 3/4;
+    padding: .2em;
+  }
+
+  .tile3 {
+    grid-column: 4/5;
+    padding: .2em;
+  }
+
+  .tile4 {
+    grid-column: 5/6;
+    padding: .2em;
+  }
+
+  .text1 {
+    margin-top: -50px;
+    grid-column: 2/3;
+    padding: .2em;
+  }
+
+  .text2 {
+    margin-top: -50px;
+    grid-column: 3/4;
+    padding: .2em;
+  }
+
+  .text3 {
+    margin-top: -50px;
+    grid-column: 4/5;
+    padding: .2em;
+  }
+
+  .text4 {
+    margin-top: -50px;
+    grid-column: 5/6;
+    padding: .2em;
+  }
+
+  .center {
+    text-align: center;
+    grid-column: 1/-1;
+  }
+
+  .center img {
+    position: absolute;
+    z-index: -1;
+    margin-top: -87px;
+  }
+
+  .center .button {
+    width: 302px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    padding: 1em;
+    border-radius: 1em;
+    border-style: 2px solid;
+    border-color: white;
+    background-color: #0073cf;
+    color: white;
+  }
+
+  .center a {
+    width: 30px;
+  }
+  .wit2 {
+    height: 233px;
+    grid-area: fff1;
+  }
+
+  .blauw2 {
+    height: 197px;
+    background-color: #0073cf;
+    grid-area: bl1;
+  }
+
+}

@@ -1,0 +1,38 @@
+.blauw2 {
+  height: 197px;
+  background-color: $mainblue;
+  grid-area: bl1;
+}
+
+.left-foot {
+  float: left;
+}
+
+.right-foot {
+  float: right;
+}
+
+.left-foot {
+  padding-top: 7em;
+}
+
+.right-foot {
+  padding-top: 1.5em;
+}
+
+.right-foot .down {
+  padding-top: 3em;
+}
+
+.footer {
+  width: 1130px;
+  margin: 0 auto;
+  color: $mainwhite;
+}
+
+
+.footer img {
+  margin-top: 2.5em;
+  height: 40px;
+  position: absolute;
+}
